@@ -1,0 +1,11 @@
+With this web application you'll be able to explore 
+the biggest league in the world : the "Premier league" 
+
+You'll find almost every updated information of this year's seasons
+you want to know from teams to standing , scores of finished games
+with the next fixtures to be played and also you'll be provided with
+highlights of the recent games 
+
+This app is developed with ReactJS using
+also two APIs , one for Team / Scores / Fixtures / Standings and
+the other for videos highlights
