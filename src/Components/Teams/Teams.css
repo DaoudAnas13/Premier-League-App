@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.teamCard{
+    display: flex;
+    align-items: center;
+    gap:3em;
+}
+
+.teamsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 2em 3em 3em 12em;
+
+
+}
+
+.teamsList ul{
+    list-style: none;
+}
+
+.teamsList li{
+    padding: .3em 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.homeBtnTeam{
+    position:absolute;
+    top:2em;
+    left:2em;
+
+    padding: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    border-radius: .5em;
+    border: none;
+    cursor: pointer;
+    background-color: #F2055C;
+    color: white;
+    font-weight: 700;
+    transition: transform 0.3s;
+}
+
+.homeBtnTeam:hover{
+    transform: scale(1.03);
+}
+
+.mainTeams{
+    background-color: #340040;
+    color: #feeafa;
+}
+
+.premLogo{
+    filter: invert(26%) sepia(93%) saturate(7477%) hue-rotate(333deg) brightness(104%) contrast(105%);
+}
+

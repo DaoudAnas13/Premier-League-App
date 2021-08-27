@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scoresTable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+td { 
+    padding: 1em;
+}
+table { 
+    border-spacing: 2em;
+    border-collapse: collapse;
+}
+
+.matchday{
+    text-transform: uppercase;
+    font-style: italic;
+    color: #340040;
+    padding: 1em 0;
+}
+
+.mainScoresContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+.homeBtnStan{
+    position:absolute;
+    top:2em;
+    left:2em;
+
+    padding: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    border-radius: .5em;
+    border: none;
+    cursor: pointer;
+    background-color: #340040;
+    color: white;
+    font-weight: 700;
+    transition: transform 0.3s;
+}
+
+.homeBtnStan:hover{
+    transform: scale(1.03);
+}
+
+
