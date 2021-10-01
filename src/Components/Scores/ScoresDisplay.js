@@ -7,6 +7,8 @@ import { useHistory } from 'react-router'
 import { dataActions } from '../../Store/TeamsData/dataFetchTeams';
 import ScoreItem from './ScoreItem';
 
+import { useEffect, useState } from 'react';
+
 
 function ScoresDisplay() {
 
@@ -23,6 +25,24 @@ function ScoresDisplay() {
         handleHistory();
         handleReset();
     }
+
+    const [locationKeys, setLocationKeys] = useState([])
+
+    useEffect(() => {
+        return history.listen(location => {
+            if (history.action === 'PUSH') {
+                setLocationKeys([location.key])
+            }
+            if (history.action === 'POP') {
+                if (locationKeys[1] === location.key) {
+                    setLocationKeys(([_, ...keys]) => keys)
+                } else {
+                    handleClick()
+                    setLocationKeys((keys) => [location.key, ...keys])
+                }
+            }
+        })
+    }, [locationKeys,])
 
     const leagueMatches = useSelector(state => state.teamsDataFetch.data.matches)
     console.log(leagueMatches)

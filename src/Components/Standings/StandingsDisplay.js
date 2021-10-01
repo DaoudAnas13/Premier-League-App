@@ -5,6 +5,7 @@ import "./StandingsTeamDetails.css"
 
 import { useHistory } from 'react-router'
 import { dataActions } from '../../Store/TeamsData/dataFetchTeams';
+import { useState, useEffect } from 'react'
 
 function StandingsDisplay() {
 
@@ -12,7 +13,6 @@ function StandingsDisplay() {
     console.log(standingsTable)
 
     const dispatch = useDispatch();
-
 
     const history = useHistory();
     const handleHistory = () => history.push('/');
@@ -25,6 +25,24 @@ function StandingsDisplay() {
         handleHistory();
         handleReset();
     }
+
+    const [locationKeys, setLocationKeys] = useState([])
+
+    useEffect(() => {
+        return history.listen(location => {
+            if (history.action === 'PUSH') {
+                setLocationKeys([location.key])
+            }
+            if (history.action === 'POP') {
+                if (locationKeys[1] === location.key) {
+                    setLocationKeys(([_, ...keys]) => keys)
+                } else {
+                    handleClick()
+                    setLocationKeys((keys) => [location.key, ...keys])
+                }
+            }
+        })
+    }, [locationKeys,])
 
 
     return (

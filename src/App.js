@@ -3,8 +3,7 @@ import HomePage from './Components/HomePage/HomePage';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Standings from './Components/Standings/Standings';
 import Teams from './Components/Teams/Teams';
