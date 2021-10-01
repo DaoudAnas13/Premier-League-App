@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Premier League Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### With this web application you'll be able to explore the biggest league in the world : the "Premier league" 
 
-## Available Scripts
+![scrnli_01_10_2021_19-04-31](https://user-images.githubusercontent.com/77737778/135666834-5ef5efa2-479e-446e-b19c-187ccd7de785.png)
 
-In the project directory, you can run:
+URL : https://sleepy-panini-3d4841.netlify.app/
 
-### `npm start`
+You'll find almost every updated information of this year's seasons you want to know from teams to standing , scores of finished games with the next fixtures to be played and also you'll be provided with highlights of the recent games 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Teams
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![scrnli_01_10_2021_19-08-03](https://user-images.githubusercontent.com/77737778/135667272-2f03de9d-3c9d-4e76-8478-97d8d4543922.png)
 
-### `npm test`
+# Standings
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![scrnli_01_10_2021_19-11-11](https://user-images.githubusercontent.com/77737778/135667519-9ed01ec1-7b18-4f4c-9e18-ada65504f9ca.png)
 
-### `npm run build`
+# Scores / Fixtures
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![scrnli_01_10_2021_19-14-28](https://user-images.githubusercontent.com/77737778/135667877-750d616c-347f-4fff-94e2-a2324f3f85ae.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Recent Highlights
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![PrtScr capture_8](https://user-images.githubusercontent.com/77737778/135668012-85fcb260-298e-4d16-9428-687046f4558e.jpg)
 
-### `npm run eject`
+## This app is developed with ReactJS 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Two APIs used in this app
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### football-data.org --> Team / Scores / Fixtures / Standings 
+### Scorebat --> videos highlights
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Note : the website is not responsive yet 
