@@ -40,6 +40,7 @@ function HighlightsDisplay() {
                 if (locationKeys[1] === location.key) {
                     setLocationKeys(([_, ...keys]) => keys)
                 } else {
+                    console.log("button clicked")
                     handleClick()
                     setLocationKeys((keys) => [location.key, ...keys])
                 }
